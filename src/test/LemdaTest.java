@@ -20,7 +20,6 @@ interface Test {
 	}
 }
 public class LemdaTest {
-
 	public static void main(String[] args) {
 		System.out.println("just show");
 		

@@ -12,8 +12,7 @@ public class GroupBy {
 		
 		// Find frequecny of input value
 		Map<String,Long> result = list.stream()
-				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));		
 		System.out.println(result);
 	}
 }

@@ -1,6 +1,6 @@
 package test;
 
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,10 +11,13 @@ public class SortTest {
 		List<String> sList = List.of("t","e","a","r","b","x");
 		
 		// Reverse order
-		//List<String> rord = sList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());		
-		List<String> rord = sList.stream().sorted().collect(Collectors.toList());		
-		Collections.sort(rord);
-		System.out.println(rord);
+		List<String> reverseOreer = sList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());	
+		
+		// sorted order
+		List<String> sortedList = sList.stream().sorted().collect(Collectors.toList());		
+		
+		System.out.println("sortedList : "+sortedList);
+		System.out.println("reverseOreer : "+reverseOreer);
 	}
 
 }

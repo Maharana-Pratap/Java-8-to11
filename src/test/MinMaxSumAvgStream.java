@@ -17,8 +17,8 @@ public class MinMaxSumAvgStream {
 	    int max = primes.stream().mapToInt(a->a).max().orElse(0);
 	    System.out.println(max);
 	    double average = primes.stream().mapToInt(a->a).average().orElse(0);
-	    System.out.println(average);
-	    
+	    System.out.println(average);	    
+	  
 	    //By using Collections
 	    System.out.println(Collections.min(primes));
 	    System.out.println(Collections.max(primes));

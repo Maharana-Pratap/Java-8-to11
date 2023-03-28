@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SplitLines {
-
 	public static void main(String[] args) {
 		String linesString = "Maharana\nPratap\nSingh";
 		System.out.println(linesString);

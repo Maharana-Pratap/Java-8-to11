@@ -15,7 +15,7 @@ public class ReduceTest {
 
 		  System.out.println("sum : " + sumNum); // 55
 		  
-		 // Add all numbers Using stream.reduce() 
+		 // Add(+) all numbers Using stream.reduce() 
 		 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		// 1st argument, init value = 0
 		  int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);

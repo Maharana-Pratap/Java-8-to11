@@ -21,7 +21,7 @@ public class FTest {
 		}
 		
 		for(String data : strList) {			
-			Integer times =  Collections.frequency(strList, data);
+		Integer times =  Collections.frequency(strList, data);
 			System.out.println(data+" is = "+times);
 		}
 	}

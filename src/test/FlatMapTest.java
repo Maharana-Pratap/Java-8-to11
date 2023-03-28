@@ -10,7 +10,7 @@ public class FlatMapTest {
 
 		List<String> l1 = Arrays.asList("aa","bb");
 		List<String> l2 = Arrays.asList("cc","dd");
-		List<String> l3 = Arrays.asList("ee","ff");
+		List<String> l3 = Arrays.asList("ee","ff", "aa");
 		
 		List<List<String>> all = Arrays.asList(l1,l2,l3);
 		System.out.println("Before flatMap() : "+all);

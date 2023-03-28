@@ -17,8 +17,14 @@ public class OptionalTest {
 		if(nm.isPresent())
 		System.out.println(nm.get());
 		
-		Optional<String> name = OptionalTest.changeCase("java");
+		// calling with null value
+		Optional<String> name = OptionalTest.changeCase(null);
 		String s = name.orElse("No name parameter found");		
 		System.out.println(s);
+		
+		// calling with Valid value
+		Optional<String> name2 = OptionalTest.changeCase("java");
+		String s2 = name2.orElse("No name parameter found");		
+		System.out.println(s2);
 	}
 }

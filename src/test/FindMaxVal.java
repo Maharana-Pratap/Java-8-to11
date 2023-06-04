@@ -40,7 +40,10 @@ public class FindMaxVal {
 		
 		// to print min value using stream api
 		System.err.println("min value print");
-		Integer min = keys.stream().mapToInt(v -> v).min().orElseThrow(NoSuchElementException::new);
+		Integer min = keys.stream()
+				.mapToInt(v -> v)
+				.min()
+				.orElseThrow(NoSuchElementException::new);
 		System.out.println(empList.get(min));
 		
 	}

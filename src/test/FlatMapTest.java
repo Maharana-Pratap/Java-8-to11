@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// flatmap() example
 public class FlatMapTest {
 
 	public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class FlatMapTest {
 		List<List<String>> all = Arrays.asList(l1,l2,l3);
 		System.out.println("Before flatMap() : "+all);
 		
+		// using flatmap()
 		List<String> flatList = all.stream()
 				.flatMap(list -> list.stream())
 				.collect(Collectors.toList());

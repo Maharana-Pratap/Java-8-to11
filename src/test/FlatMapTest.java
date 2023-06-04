@@ -20,6 +20,6 @@ public class FlatMapTest {
 				.collect(Collectors.toList());
 		
 		System.out.println("After apply flatMap() "+flatList);
+		
 	}
-
 }

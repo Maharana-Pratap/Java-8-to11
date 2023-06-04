@@ -4,8 +4,7 @@ public class NumberFromString {
 
 	public static void main(String[] args) {
 
-		String st = "abc123xyz";
-		
+		String st = "abc123xyz90";		
 		char[] arr = st.toCharArray();
 		
 		for(char c : arr) {

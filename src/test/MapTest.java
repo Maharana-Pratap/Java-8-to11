@@ -22,6 +22,13 @@ public class MapTest {
 		set.forEach(data -> {
 			System.out.println(data.getKey() + " : "+data.getValue());
 		});
+		
+		System.out.println("======== using java-8 forEach ============");
+		// ======== using java-8 forEach ============
+		map.forEach((key,value) -> {
+			System.out.println("key: "+key+", value : "+value);
+		});
+		
 	}
 
 }

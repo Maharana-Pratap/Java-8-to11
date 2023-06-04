@@ -7,8 +7,12 @@ import java.util.stream.Collectors;
 public class NumSortStream {
 
 	public static void main(String[] args) {
-		List<Integer> numList = List.of(4,2,6,8,1,2);
 		
+		List<String> namList = List.of("Pintu", "Kittu","Priya");		
+		List<String> sortNam = namList.stream().sorted().collect(Collectors.toList());
+		System.out.println("Assending Order Name : "+sortNam);
+		
+		List<Integer> numList = List.of(4,2,6,8,1,2);
 		List<Integer> sortNum = numList.stream().sorted().collect(Collectors.toList());
 		System.out.println("Assending Order : "+sortNum);
 		

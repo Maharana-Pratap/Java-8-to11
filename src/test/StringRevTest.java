@@ -8,7 +8,8 @@ public class StringRevTest {
 		char[] arr = str.toCharArray();		
 		StringBuffer buff = new StringBuffer();
 		
-		String revStr = "";  //=== Testing for print reverse string		
+		//=== Testing for print reverse string	
+		String revStr = "";  	
 		for(int i = arr.length-1; i >= 0; i--) {
 			revStr = revStr + arr[i];
 		}

@@ -4,11 +4,16 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 public class MinMaxFromList {
 
 	public static void main(String[] args) {
 
+		// converting string to optional
+		String s = "java";
+		Optional<String> string = Optional.of(s);
+		
 		// Get max value from list using stream
 		List<Integer> numList = List.of(4,2,6,8,1,2);
 		Integer maxVal = numList.stream().max(Comparator.comparing(Integer::valueOf)).get();
